@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22093E252BF54D6C0059FC11 /* UserProfileCurrentBeltView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22093E242BF54D6C0059FC11 /* UserProfileCurrentBeltView.swift */; };
 		22BFD5542BF3DE610064E051 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFD5532BF3DE610064E051 /* AppDelegate.swift */; };
 		22BFD5562BF3DE610064E051 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFD5552BF3DE610064E051 /* SceneDelegate.swift */; };
 		22BFD5582BF3DE610064E051 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFD5572BF3DE610064E051 /* UserProfileViewController.swift */; };
@@ -18,8 +19,8 @@
 		22BFD5782BF3DE620064E051 /* ChokeTrackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFD5772BF3DE620064E051 /* ChokeTrackUITests.swift */; };
 		22BFD57A2BF3DE620064E051 /* ChokeTrackUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFD5792BF3DE620064E051 /* ChokeTrackUITestsLaunchTests.swift */; };
 		22BFD58B2BF3EF720064E051 /* UIImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFD58A2BF3EF720064E051 /* UIImageViewExtensions.swift */; };
-		22BFD58E2BF3F78E0064E051 /* UserProfileInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFD58D2BF3F78E0064E051 /* UserProfileInfoViewController.swift */; };
-		22BFD5902BF3FE0A0064E051 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFD58F2BF3FE0A0064E051 /* UIViewControllerExtensions.swift */; };
+		22BFD58E2BF3F78E0064E051 /* UserProfileInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFD58D2BF3F78E0064E051 /* UserProfileInfoView.swift */; };
+		22BFD5902BF3FE0A0064E051 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFD58F2BF3FE0A0064E051 /* UIViewExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		22093E242BF54D6C0059FC11 /* UserProfileCurrentBeltView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileCurrentBeltView.swift; sourceTree = "<group>"; };
 		22BFD5502BF3DE610064E051 /* ChokeTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChokeTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22BFD5532BF3DE610064E051 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22BFD5552BF3DE610064E051 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,8 +57,8 @@
 		22BFD5772BF3DE620064E051 /* ChokeTrackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChokeTrackUITests.swift; sourceTree = "<group>"; };
 		22BFD5792BF3DE620064E051 /* ChokeTrackUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChokeTrackUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		22BFD58A2BF3EF720064E051 /* UIImageViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtensions.swift; sourceTree = "<group>"; };
-		22BFD58D2BF3F78E0064E051 /* UserProfileInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileInfoViewController.swift; sourceTree = "<group>"; };
-		22BFD58F2BF3FE0A0064E051 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		22BFD58D2BF3F78E0064E051 /* UserProfileInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileInfoView.swift; sourceTree = "<group>"; };
+		22BFD58F2BF3FE0A0064E051 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,8 @@
 		22BFD5862BF3ECFA0064E051 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				22BFD58D2BF3F78E0064E051 /* UserProfileInfoView.swift */,
+				22093E242BF54D6C0059FC11 /* UserProfileCurrentBeltView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -149,7 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				22BFD58A2BF3EF720064E051 /* UIImageViewExtensions.swift */,
-				22BFD58F2BF3FE0A0064E051 /* UIViewControllerExtensions.swift */,
+				22BFD58F2BF3FE0A0064E051 /* UIViewExtensions.swift */,
 			);
 			path = UIExtensions;
 			sourceTree = "<group>";
@@ -158,7 +162,6 @@
 			isa = PBXGroup;
 			children = (
 				22BFD5572BF3DE610064E051 /* UserProfileViewController.swift */,
-				22BFD58D2BF3F78E0064E051 /* UserProfileInfoViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -294,13 +297,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22093E252BF54D6C0059FC11 /* UserProfileCurrentBeltView.swift in Sources */,
 				22BFD5582BF3DE610064E051 /* UserProfileViewController.swift in Sources */,
 				22BFD5542BF3DE610064E051 /* AppDelegate.swift in Sources */,
 				22BFD55E2BF3DE610064E051 /* ChokeTrack.xcdatamodeld in Sources */,
 				22BFD58B2BF3EF720064E051 /* UIImageViewExtensions.swift in Sources */,
 				22BFD5562BF3DE610064E051 /* SceneDelegate.swift in Sources */,
-				22BFD58E2BF3F78E0064E051 /* UserProfileInfoViewController.swift in Sources */,
-				22BFD5902BF3FE0A0064E051 /* UIViewControllerExtensions.swift in Sources */,
+				22BFD58E2BF3F78E0064E051 /* UserProfileInfoView.swift in Sources */,
+				22BFD5902BF3FE0A0064E051 /* UIViewExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

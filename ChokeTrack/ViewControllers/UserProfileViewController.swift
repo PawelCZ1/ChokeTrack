@@ -11,36 +11,56 @@ class UserProfileViewController: UIViewController {
     
     let scrollView = UIScrollView()
     let contentView = UIView()
+    let userProfileInfoView = UserProfileInfoView()
+    let userProfileCurrentBeltView = UserProfileCurrentBeltView()
     
-    var userProfileInfoVC = UserProfileInfoViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemMint
         setupScrollView()
         setupContentView()
-        addUserProfileInfoVC()
+        addUserProfileInfoView()
+        addUserProfileCurrentBeltView()
     }
     
-    private func addUserProfileInfoVC() {
-        addChild(userProfileInfoVC)
-        contentView.addSubview(userProfileInfoVC.view)
-        userProfileInfoVC.view.backgroundColor = .systemPurple
-        userProfileInfoVC.didMove(toParent: self)
+    private func addUserProfileInfoView() {
+        contentView.addSubview(userProfileInfoView)
+        userProfileInfoView.backgroundColor = .systemPurple
         DispatchQueue.main.async(execute:{
-            self.userProfileInfoVC.makeRounded()
+            self.userProfileInfoView.makeRoundedAndShadow()
         })
-        setUserProfileInfoVCConstraints()
+        setUserProfileInfoViewConstraints()
     }
     
-    private func setUserProfileInfoVCConstraints() {
-        userProfileInfoVC.view.translatesAutoresizingMaskIntoConstraints = false
+    private func setUserProfileInfoViewConstraints() {
+        userProfileInfoView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            userProfileInfoVC.view.topAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.topAnchor, constant: 32),
-            userProfileInfoVC.view.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 32),
-            userProfileInfoVC.view.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -32),
-            userProfileInfoVC.view.heightAnchor.constraint(equalToConstant: 200)
+            userProfileInfoView.topAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.topAnchor, constant: 32),
+            userProfileInfoView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 32),
+            userProfileInfoView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -32),
+            userProfileInfoView.heightAnchor.constraint(equalToConstant: 200)
+        ])
+    }
+    
+    private func addUserProfileCurrentBeltView() {
+        contentView.addSubview(userProfileCurrentBeltView)
+        userProfileCurrentBeltView.backgroundColor = .systemPurple
+        DispatchQueue.main.async(execute:{
+            self.userProfileCurrentBeltView.makeRoundedAndShadow()
+        })
+        setUserProfileCurrentBeltConstraints()
+    }
+    
+    private func setUserProfileCurrentBeltConstraints() {
+        userProfileCurrentBeltView.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            userProfileCurrentBeltView.topAnchor.constraint(equalTo: userProfileInfoView.bottomAnchor, constant: 40),
+            userProfileCurrentBeltView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 32),
+            userProfileCurrentBeltView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -32),
+            userProfileCurrentBeltView.heightAnchor.constraint(equalToConstant: 200)
         ])
     }
     
@@ -55,8 +75,8 @@ class UserProfileViewController: UIViewController {
         scrollView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            scrollView.topAnchor.constraint(equalTo: view.topAnchor),
-            scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            scrollView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            scrollView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
             scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
         ])
