@@ -1,5 +1,5 @@
 //
-//  UIViewControllerExtensions.swift
+//  UIViewExtensions.swift
 //  ChokeTrack
 //
 //  Created by Paweł Czapran on 14/05/2024.

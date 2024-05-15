@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  UserProfileViewController.swift
 //  ChokeTrack
 //
 //  Created by Paweł Czapran on 14/05/2024.
@@ -71,7 +71,6 @@ class UserProfileViewController: UIViewController {
         scrollView.showsHorizontalScrollIndicator = false
         scrollView.isDirectionalLockEnabled = true
         scrollView.isScrollEnabled = true
-        scrollView.contentSize = CGSize(width: 100, height: 5000)
         scrollView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
