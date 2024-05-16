@@ -30,54 +30,26 @@
             filePath = "ChokeTrack/ViewControllers/UserProfileViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "12"
-            endingLineNumber = "12"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
             landmarkName = "UserProfileViewController"
             landmarkType = "3">
-            <Locations>
-               <Location
-                  uuid = "9B66BD74-F3ED-40F4-AE47-74616EACA849 - e93839ddcfa7ad34"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ChokeTrack.UserProfileViewController.scrollView.getter : __C.UIScrollView"
-                  moduleName = "ChokeTrack"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/macos/Documents/xcode_apps/ChokeTrack/ChokeTrack/ViewControllers/UserProfileViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0">
-               </Location>
-               <Location
-                  uuid = "9B66BD74-F3ED-40F4-AE47-74616EACA849 - 4ea25da0bf1bf619"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ChokeTrack.UserProfileViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; ChokeTrack.UserProfileViewController"
-                  moduleName = "ChokeTrack"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/macos/Documents/xcode_apps/ChokeTrack/ChokeTrack/ViewControllers/UserProfileViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "12"
-                  endingLineNumber = "12">
-               </Location>
-               <Location
-                  uuid = "9B66BD74-F3ED-40F4-AE47-74616EACA849 - 337cf0a520e5e9d7"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ChokeTrack.UserProfileViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;ChokeTrack.UserProfileViewController&gt;"
-                  moduleName = "ChokeTrack"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/macos/Documents/xcode_apps/ChokeTrack/ChokeTrack/ViewControllers/UserProfileViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "12"
-                  endingLineNumber = "12">
-               </Location>
-            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "42A3C897-BC8E-45BC-B76E-A04BBE7C822D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ChokeTrack/TableViewCells/UserProfileStatsTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "init(style:reuseIdentifier:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

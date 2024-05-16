@@ -9,19 +9,29 @@ import UIKit
 
 class UserProfileViewController: UIViewController {
     
+    
+    struct Cells {
+        static let statCell = "StatCell"
+    }
+    
+    
     let scrollView = UIScrollView()
     let contentView = UIView()
     let userProfileInfoView = UserProfileInfoView()
     let userProfileCurrentBeltView = UserProfileCurrentBeltView()
+    let userProfileStatsTableView = UITableView()
     
+    var stats: [UserProfileStat] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemMint
+        stats = fetchData()
         setupScrollView()
         setupContentView()
         addUserProfileInfoView()
         addUserProfileCurrentBeltView()
+        setupUserProfileStatsTableView()
     }
     
     private func addUserProfileInfoView() {
@@ -94,6 +104,81 @@ class UserProfileViewController: UIViewController {
             contentView.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
             contentView.heightAnchor.constraint(equalToConstant: 2000)
         ])
+    }
+    
+    private func setupUserProfileStatsTableView() {
+        contentView.addSubview(userProfileStatsTableView)
+        
+        userProfileStatsTableView.delegate = self
+        userProfileStatsTableView.dataSource = self
+        
+        userProfileStatsTableView.backgroundColor = .systemPurple
+        userProfileStatsTableView.isScrollEnabled = false
+        //userProfileStatsTableView.is
+        userProfileStatsTableView.rowHeight = 25
+        userProfileStatsTableView.register(UserProfileStatsTableViewCell.self, forCellReuseIdentifier: Cells.statCell)
+        DispatchQueue.main.async(execute:{
+            self.userProfileStatsTableView.makeRoundedAndShadow()
+        })
+        
+        userProfileStatsTableView.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            userProfileStatsTableView.topAnchor.constraint(equalTo: userProfileCurrentBeltView.bottomAnchor, constant: 40),
+            userProfileStatsTableView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 32),
+            userProfileStatsTableView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -32)
+            ,
+            userProfileStatsTableView.heightAnchor.constraint(equalToConstant: 100)
+        ])
+    }
+}
+
+extension UserProfileViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return stats.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = userProfileStatsTableView.dequeueReusableCell(withIdentifier: Cells.statCell) as! UserProfileStatsTableViewCell
+        
+        let userProfileStat = stats[indexPath.row]
+        cell.configure(userProfileStat: userProfileStat)
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        let cornerRadius = 8
+        var corners: UIRectCorner = []
+
+        if indexPath.row == 0 {
+            corners.update(with: .topLeft)
+            corners.update(with: .topRight)
+        }
+
+        if indexPath.row == tableView.numberOfRows(inSection: indexPath.section) - 1 {
+            corners.update(with: .bottomLeft)
+            corners.update(with: .bottomRight)
+        }
+
+        let maskLayer = CAShapeLayer()
+        maskLayer.path = UIBezierPath(roundedRect: cell.bounds,
+                                      byRoundingCorners: corners,
+                                      cornerRadii: CGSize(width: cornerRadius, height: cornerRadius)).cgPath
+        cell.layer.mask = maskLayer
+    }
+    
+}
+
+extension UserProfileViewController {
+    func fetchData() -> [UserProfileStat] {
+        return [
+            UserProfileStat(imageSource: "a", name: "Wins", lastSessionStats: "0", inTotalStats: "0"),
+            UserProfileStat(imageSource: "a", name: "Loses", lastSessionStats: "0", inTotalStats: "0"),
+            UserProfileStat(imageSource: "a", name: "Subs", lastSessionStats: "0", inTotalStats: "0"),
+            UserProfileStat(imageSource: "a", name: "Chokes", lastSessionStats: "0", inTotalStats: "0")
+        ]
     }
 }
 

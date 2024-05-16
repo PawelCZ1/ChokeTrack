@@ -21,6 +21,8 @@
 		22BFD58B2BF3EF720064E051 /* UIImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFD58A2BF3EF720064E051 /* UIImageViewExtensions.swift */; };
 		22BFD58E2BF3F78E0064E051 /* UserProfileInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFD58D2BF3F78E0064E051 /* UserProfileInfoView.swift */; };
 		22BFD5902BF3FE0A0064E051 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFD58F2BF3FE0A0064E051 /* UIViewExtensions.swift */; };
+		22C9E33D2BF692FC0001324F /* UserProfileStatsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C9E33C2BF692FC0001324F /* UserProfileStatsTableViewCell.swift */; };
+		22C9E3402BF69C1F0001324F /* UserProfileStat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C9E33F2BF69C1F0001324F /* UserProfileStat.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		22BFD58A2BF3EF720064E051 /* UIImageViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtensions.swift; sourceTree = "<group>"; };
 		22BFD58D2BF3F78E0064E051 /* UserProfileInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileInfoView.swift; sourceTree = "<group>"; };
 		22BFD58F2BF3FE0A0064E051 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		22C9E33C2BF692FC0001324F /* UserProfileStatsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileStatsTableViewCell.swift; sourceTree = "<group>"; };
+		22C9E33F2BF69C1F0001324F /* UserProfileStat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileStat.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 		22BFD5522BF3DE610064E051 /* ChokeTrack */ = {
 			isa = PBXGroup;
 			children = (
+				22C9E33E2BF69C0E0001324F /* Models */,
+				22C9E33B2BF692C10001324F /* TableViewCells */,
 				22BFD58C2BF3F7640064E051 /* ViewControllers */,
 				22BFD5892BF3EF580064E051 /* UIExtensions */,
 				22BFD5862BF3ECFA0064E051 /* Views */,
@@ -164,6 +170,22 @@
 				22BFD5572BF3DE610064E051 /* UserProfileViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		22C9E33B2BF692C10001324F /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				22C9E33C2BF692FC0001324F /* UserProfileStatsTableViewCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		22C9E33E2BF69C0E0001324F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				22C9E33F2BF69C1F0001324F /* UserProfileStat.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,10 +321,12 @@
 			files = (
 				22093E252BF54D6C0059FC11 /* UserProfileCurrentBeltView.swift in Sources */,
 				22BFD5582BF3DE610064E051 /* UserProfileViewController.swift in Sources */,
+				22C9E3402BF69C1F0001324F /* UserProfileStat.swift in Sources */,
 				22BFD5542BF3DE610064E051 /* AppDelegate.swift in Sources */,
 				22BFD55E2BF3DE610064E051 /* ChokeTrack.xcdatamodeld in Sources */,
 				22BFD58B2BF3EF720064E051 /* UIImageViewExtensions.swift in Sources */,
 				22BFD5562BF3DE610064E051 /* SceneDelegate.swift in Sources */,
+				22C9E33D2BF692FC0001324F /* UserProfileStatsTableViewCell.swift in Sources */,
 				22BFD58E2BF3F78E0064E051 /* UserProfileInfoView.swift in Sources */,
 				22BFD5902BF3FE0A0064E051 /* UIViewExtensions.swift in Sources */,
 			);
