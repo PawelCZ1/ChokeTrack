@@ -128,7 +128,7 @@ class UserProfileViewController: UIViewController {
             userProfileStatsTableView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 32),
             userProfileStatsTableView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -32)
             ,
-            userProfileStatsTableView.heightAnchor.constraint(equalToConstant: 100)
+            userProfileStatsTableView.heightAnchor.constraint(equalToConstant: 125)
         ])
     }
 }
@@ -177,6 +177,7 @@ extension UserProfileViewController {
             UserProfileStat(imageSource: "a", name: "Wins", lastSessionStats: "0", inTotalStats: "0"),
             UserProfileStat(imageSource: "a", name: "Loses", lastSessionStats: "0", inTotalStats: "0"),
             UserProfileStat(imageSource: "a", name: "Subs", lastSessionStats: "0", inTotalStats: "0"),
+            UserProfileStat(imageSource: "a", name: "Taps", lastSessionStats: "0", inTotalStats: "0"),
             UserProfileStat(imageSource: "a", name: "Chokes", lastSessionStats: "0", inTotalStats: "0")
         ]
     }
