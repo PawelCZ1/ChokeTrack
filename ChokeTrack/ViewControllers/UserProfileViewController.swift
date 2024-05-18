@@ -9,6 +9,7 @@ import UIKit
 
 class UserProfileViewController: UIViewController {
     
+    let viewModel = UserProfileViewModel()
     
     struct Cells {
         static let statCell = "StatCell"
@@ -22,12 +23,13 @@ class UserProfileViewController: UIViewController {
     let userProfileStatsTableView = UITableView()
     let userProfileFavoriteTechniqueView = UserProfileFavoriteTechniqueView()
     
-    var stats: [UserProfileStat] = []
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .black
-        stats = fetchData()
+        viewModel.stats.value = fetchData()
+        viewModel.stats.bind {_ in 
+            self.userProfileStatsTableView.reloadData()
+        }
         setupScrollView()
         setupContentView()
         addUserProfileInfoView()
@@ -158,12 +160,12 @@ class UserProfileViewController: UIViewController {
 extension UserProfileViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return stats.count
+        return viewModel.stats.value?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = userProfileStatsTableView.dequeueReusableCell(withIdentifier: Cells.statCell) as! UserProfileStatsTableViewCell
-        
+        guard let stats = viewModel.stats.value else {return UITableViewCell()}
         let userProfileStat = stats[indexPath.row]
         cell.configure(userProfileStat: userProfileStat)
         
