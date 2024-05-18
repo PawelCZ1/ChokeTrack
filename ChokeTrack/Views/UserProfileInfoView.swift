@@ -47,6 +47,7 @@ class UserProfileInfoView: UIView {
         addSubview(userProfileNameLabel)
         
         userProfileNameLabel.text = "Name"
+        userProfileNameLabel.textColor = .black
         userProfileNameLabel.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
@@ -60,6 +61,7 @@ class UserProfileInfoView: UIView {
         addSubview(userProfileTrainingCountLabel)
         
         userProfileTrainingCountLabel.text = "Trainings: 0"
+        userProfileTrainingCountLabel.textColor = .black
         userProfileTrainingCountLabel.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
@@ -73,6 +75,8 @@ class UserProfileInfoView: UIView {
         addSubview(userProfileDescriptionLabel)
         
         userProfileDescriptionLabel.text = "Description"
+        userProfileDescriptionLabel.textColor = .black
+        userProfileDescriptionLabel.font = .boldSystemFont(ofSize: 18)
         userProfileDescriptionLabel.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([

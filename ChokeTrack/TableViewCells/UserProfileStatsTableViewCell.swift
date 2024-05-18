@@ -25,7 +25,7 @@ class UserProfileStatsTableViewCell: UITableViewCell {
     }
     
     func configure(userProfileStat: UserProfileStat) {
-        backgroundColor = .systemPurple
+        backgroundColor = .darkRose
         selectionStyle = .none
         userProfileStatLabel.text = userProfileStat.name
         userProfileLastSessionStatsLabel.text = userProfileStat.lastSessionStats
@@ -36,6 +36,7 @@ class UserProfileStatsTableViewCell: UITableViewCell {
         addSubview(userProfileStatLabel)
         
         userProfileStatLabel.text = "No stat"
+        userProfileStatLabel.textColor = .black
         
         userProfileStatLabel.translatesAutoresizingMaskIntoConstraints = false
         
@@ -50,6 +51,7 @@ class UserProfileStatsTableViewCell: UITableViewCell {
         addSubview(userProfileLastSessionStatsLabel)
         
         userProfileLastSessionStatsLabel.text = "0"
+        userProfileLastSessionStatsLabel.textColor = .black
         
         userProfileLastSessionStatsLabel.translatesAutoresizingMaskIntoConstraints = false
         
@@ -64,6 +66,7 @@ class UserProfileStatsTableViewCell: UITableViewCell {
         addSubview(userProfileInTotalStatsLabel)
         
         userProfileInTotalStatsLabel.text = "0"
+        userProfileInTotalStatsLabel.textColor = .black
         
         userProfileInTotalStatsLabel.translatesAutoresizingMaskIntoConstraints = false
         

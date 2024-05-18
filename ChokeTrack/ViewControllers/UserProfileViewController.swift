@@ -20,23 +20,25 @@ class UserProfileViewController: UIViewController {
     let userProfileInfoView = UserProfileInfoView()
     let userProfileCurrentBeltView = UserProfileCurrentBeltView()
     let userProfileStatsTableView = UITableView()
+    let userProfileFavoriteTechniqueView = UserProfileFavoriteTechniqueView()
     
     var stats: [UserProfileStat] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemMint
+        view.backgroundColor = .black
         stats = fetchData()
         setupScrollView()
         setupContentView()
         addUserProfileInfoView()
         addUserProfileCurrentBeltView()
         setupUserProfileStatsTableView()
+        addUserProfileFavoriteTechniqueView()
     }
     
     private func addUserProfileInfoView() {
         contentView.addSubview(userProfileInfoView)
-        userProfileInfoView.backgroundColor = .systemPurple
+        userProfileInfoView.backgroundColor = .darkRose
         DispatchQueue.main.async(execute:{
             self.userProfileInfoView.makeRoundedAndShadow()
         })
@@ -56,7 +58,7 @@ class UserProfileViewController: UIViewController {
     
     private func addUserProfileCurrentBeltView() {
         contentView.addSubview(userProfileCurrentBeltView)
-        userProfileCurrentBeltView.backgroundColor = .systemPurple
+        userProfileCurrentBeltView.backgroundColor = .darkRose
         DispatchQueue.main.async(execute:{
             self.userProfileCurrentBeltView.makeRoundedAndShadow()
         })
@@ -112,7 +114,7 @@ class UserProfileViewController: UIViewController {
         userProfileStatsTableView.delegate = self
         userProfileStatsTableView.dataSource = self
         
-        userProfileStatsTableView.backgroundColor = .systemPurple
+        userProfileStatsTableView.backgroundColor = .darkRose
         userProfileStatsTableView.isScrollEnabled = false
         //userProfileStatsTableView.is
         userProfileStatsTableView.rowHeight = 25
@@ -129,6 +131,26 @@ class UserProfileViewController: UIViewController {
             userProfileStatsTableView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -32)
             ,
             userProfileStatsTableView.heightAnchor.constraint(equalToConstant: 125)
+        ])
+    }
+    
+    private func addUserProfileFavoriteTechniqueView() {
+        contentView.addSubview(userProfileFavoriteTechniqueView)
+        userProfileFavoriteTechniqueView.backgroundColor = .darkRose
+        DispatchQueue.main.async(execute:{
+            self.userProfileFavoriteTechniqueView.makeRoundedAndShadow()
+        })
+        setUserProfileFavoriteTechniqueViewConstraints()
+    }
+    
+    private func setUserProfileFavoriteTechniqueViewConstraints() {
+        userProfileFavoriteTechniqueView.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            userProfileFavoriteTechniqueView.topAnchor.constraint(equalTo: userProfileStatsTableView.bottomAnchor, constant: 40),
+            userProfileFavoriteTechniqueView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 32),
+            userProfileFavoriteTechniqueView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -32),
+            userProfileFavoriteTechniqueView.heightAnchor.constraint(equalToConstant: 200)
         ])
     }
 }

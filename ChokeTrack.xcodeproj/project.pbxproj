@@ -23,6 +23,7 @@
 		22BFD5902BF3FE0A0064E051 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFD58F2BF3FE0A0064E051 /* UIViewExtensions.swift */; };
 		22C9E33D2BF692FC0001324F /* UserProfileStatsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C9E33C2BF692FC0001324F /* UserProfileStatsTableViewCell.swift */; };
 		22C9E3402BF69C1F0001324F /* UserProfileStat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C9E33F2BF69C1F0001324F /* UserProfileStat.swift */; };
+		22F5729D2BF80636007E61AA /* UserProfileFavoriteTechniqueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F5729C2BF80636007E61AA /* UserProfileFavoriteTechniqueView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		22BFD58F2BF3FE0A0064E051 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		22C9E33C2BF692FC0001324F /* UserProfileStatsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileStatsTableViewCell.swift; sourceTree = "<group>"; };
 		22C9E33F2BF69C1F0001324F /* UserProfileStat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileStat.swift; sourceTree = "<group>"; };
+		22F5729C2BF80636007E61AA /* UserProfileFavoriteTechniqueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileFavoriteTechniqueView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 			children = (
 				22BFD58D2BF3F78E0064E051 /* UserProfileInfoView.swift */,
 				22093E242BF54D6C0059FC11 /* UserProfileCurrentBeltView.swift */,
+				22F5729C2BF80636007E61AA /* UserProfileFavoriteTechniqueView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 				22BFD5562BF3DE610064E051 /* SceneDelegate.swift in Sources */,
 				22C9E33D2BF692FC0001324F /* UserProfileStatsTableViewCell.swift in Sources */,
 				22BFD58E2BF3F78E0064E051 /* UserProfileInfoView.swift in Sources */,
+				22F5729D2BF80636007E61AA /* UserProfileFavoriteTechniqueView.swift in Sources */,
 				22BFD5902BF3FE0A0064E051 /* UIViewExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -28,6 +28,7 @@ class UserProfileCurrentBeltView: UIView {
         addSubview(userProfileCurrentBeltLabel)
         
         userProfileCurrentBeltLabel.text = "Current belt"
+        userProfileCurrentBeltLabel.textColor = .black
         userProfileCurrentBeltLabel.textAlignment = .center
         userProfileCurrentBeltLabel.font = .boldSystemFont(ofSize: 18)
         userProfileCurrentBeltLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -58,7 +59,7 @@ class UserProfileCurrentBeltView: UIView {
         
         userProfileChangeCurrentBeltButton.setTitle("Change", for: .normal)
         userProfileChangeCurrentBeltButton.setTitleColor(.black, for: .normal)
-        userProfileChangeCurrentBeltButton.backgroundColor = .systemTeal
+        userProfileChangeCurrentBeltButton.backgroundColor = .darkerRose
         userProfileChangeCurrentBeltButton.layer.cornerRadius = 8
         userProfileChangeCurrentBeltButton.layer.borderWidth = 1
         userProfileChangeCurrentBeltButton.layer.borderColor = UIColor.black.cgColor
