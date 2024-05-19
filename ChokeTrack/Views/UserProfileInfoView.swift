@@ -14,16 +14,12 @@ class UserProfileInfoView: UIView {
     let userProfileTrainingCountLabel = UILabel()
     let userProfileDescriptionLabel = UILabel()
     
-    init() {
-        super.init(frame: .zero)
+    func configureUI(vm: UserProfileViewModel) {
+        
         setupUserProfileIconImageView()
-        setupUserProfileNameLabel()
+        setupUserProfileNameLabel(vm: vm)
         setupUserProfileTrainingCountLabel()
-        setupUserProfileDescriptionLabel()
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        setupUserProfileDescriptionLabel(vm: vm)
     }
     
     private func setupUserProfileIconImageView() {
@@ -43,10 +39,14 @@ class UserProfileInfoView: UIView {
         ])
     }
     
-    private func setupUserProfileNameLabel() {
+    private func setupUserProfileNameLabel(vm: UserProfileViewModel) {
         addSubview(userProfileNameLabel)
         
-        userProfileNameLabel.text = "Name"
+        userProfileNameLabel.text = vm.name.value ?? ""
+        vm.name.bind { value in
+            guard let value = value else { return }
+            self.userProfileNameLabel.text = value
+        }
         userProfileNameLabel.textColor = .black
         userProfileNameLabel.translatesAutoresizingMaskIntoConstraints = false
         
@@ -71,10 +71,14 @@ class UserProfileInfoView: UIView {
         ])
     }
     
-    private func setupUserProfileDescriptionLabel() {
+    private func setupUserProfileDescriptionLabel(vm: UserProfileViewModel) {
         addSubview(userProfileDescriptionLabel)
         
-        userProfileDescriptionLabel.text = "Description"
+        userProfileDescriptionLabel.text = vm.description.value ?? ""
+        vm.description.bind { value in
+            guard let value = value else { return }
+            self.userProfileDescriptionLabel.text = value
+        }
         userProfileDescriptionLabel.textColor = .black
         userProfileDescriptionLabel.font = .boldSystemFont(ofSize: 18)
         userProfileDescriptionLabel.translatesAutoresizingMaskIntoConstraints = false

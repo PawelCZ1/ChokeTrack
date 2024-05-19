@@ -24,7 +24,7 @@
                                 </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="default_user_profile_image" translatesAutoresizingMaskIntoConstraints="NO" id="buH-GL-wmh">
-                                <rect key="frame" x="74" y="517" width="100" height="100"/>
+                                <rect key="frame" x="102" y="317" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="Cwi-cV-aH0"/>
                                     <constraint firstAttribute="height" constant="100" id="xrL-f9-fhK"/>
@@ -34,6 +34,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="buH-GL-wmh" firstAttribute="top" secondItem="GmB-kY-sjr" secondAttribute="bottom" constant="8" symbolic="YES" id="65w-PE-mKe"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GmB-kY-sjr" secondAttribute="trailing" constant="16" id="Bo7-MX-XOT"/>
                             <constraint firstItem="GmB-kY-sjr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hb6-0n-K8Q"/>
                             <constraint firstItem="GmB-kY-sjr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="IHZ-VV-nxo"/>

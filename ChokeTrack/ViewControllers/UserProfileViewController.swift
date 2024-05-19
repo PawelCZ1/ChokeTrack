@@ -26,8 +26,8 @@ class UserProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .black
-        viewModel.stats.value = fetchData()
-        viewModel.stats.bind {_ in 
+        viewModel.initialize()
+        viewModel.stats.bind {_ in
             self.userProfileStatsTableView.reloadData()
         }
         setupScrollView()
@@ -48,6 +48,7 @@ class UserProfileViewController: UIViewController {
     }
     
     private func setUserProfileInfoViewConstraints() {
+        userProfileInfoView.configureUI(vm: viewModel)
         userProfileInfoView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
@@ -106,7 +107,7 @@ class UserProfileViewController: UIViewController {
             contentView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),
             contentView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor),
             contentView.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
-            contentView.heightAnchor.constraint(equalToConstant: 2000)
+            contentView.heightAnchor.constraint(equalToConstant: 1000)
         ])
     }
     
@@ -194,16 +195,3 @@ extension UserProfileViewController: UITableViewDelegate, UITableViewDataSource 
     }
     
 }
-
-extension UserProfileViewController {
-    func fetchData() -> [UserProfileStat] {
-        return [
-            UserProfileStat(imageSource: "a", name: "Wins", lastSessionStats: "0", inTotalStats: "0"),
-            UserProfileStat(imageSource: "a", name: "Loses", lastSessionStats: "0", inTotalStats: "0"),
-            UserProfileStat(imageSource: "a", name: "Subs", lastSessionStats: "0", inTotalStats: "0"),
-            UserProfileStat(imageSource: "a", name: "Taps", lastSessionStats: "0", inTotalStats: "0"),
-            UserProfileStat(imageSource: "a", name: "Chokes", lastSessionStats: "0", inTotalStats: "0")
-        ]
-    }
-}
-
