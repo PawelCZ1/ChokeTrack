@@ -9,19 +9,17 @@ import UIKit
 
 class UserProfileFavoriteTechniqueView: UIView {
     
+    var vm: UserProfileViewModel!
+    
     let userProfileFavoriteTechniqueLabel = UILabel()
     let userProfileFavoriteTechniqueImageView = UIImageView()
     let userProfileFavoriteTechniqueNameLabel = UILabel()
     
-    init() {
-        super.init(frame: .zero)
+    func configureUI(vm: UserProfileViewModel) {
+        self.vm = vm
         setupUserProfileFavoriteTechniqueLabel()
         setupUserProfileFavoriteTechniqueImageView()
         setupUserProfileFavoriteTechniqueNameLabel()
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
     
     private func setupUserProfileFavoriteTechniqueLabel() {
@@ -63,9 +61,15 @@ class UserProfileFavoriteTechniqueView: UIView {
     private func setupUserProfileFavoriteTechniqueNameLabel() {
         addSubview(userProfileFavoriteTechniqueNameLabel)
         
-        let underlineAttribute = [NSAttributedString.Key.underlineStyle: NSUnderlineStyle.single.rawValue]
-        let underlineAttributedString = NSAttributedString(string: "Taktarov", attributes: underlineAttribute)
-        userProfileFavoriteTechniqueNameLabel.attributedText = underlineAttributedString
+        if vm.favoriteTechnique.value != nil {
+            let underlineAttribute = [NSAttributedString.Key.underlineStyle: NSUnderlineStyle.single.rawValue]
+            let underlineAttributedString = NSAttributedString(string: vm.favoriteTechnique.value!!, attributes: underlineAttribute)
+            userProfileFavoriteTechniqueNameLabel.attributedText = underlineAttributedString
+        } else {
+            let underlineAttribute = [NSAttributedString.Key.underlineStyle: NSUnderlineStyle.single.rawValue]
+            let underlineAttributedString = NSAttributedString(string: "Taktarov", attributes: underlineAttribute)
+            userProfileFavoriteTechniqueNameLabel.attributedText = underlineAttributedString
+        }
         userProfileFavoriteTechniqueNameLabel.textColor = .black
         userProfileFavoriteTechniqueNameLabel.textAlignment = .center
         userProfileFavoriteTechniqueNameLabel.font = .boldSystemFont(ofSize: 14)

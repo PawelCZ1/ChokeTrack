@@ -9,7 +9,7 @@ import UIKit
 
 class UserProfileViewController: UIViewController {
     
-    let viewModel = UserProfileViewModel()
+    let vm = UserProfileViewModel()
     
     struct Cells {
         static let statCell = "StatCell"
@@ -26,8 +26,8 @@ class UserProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .black
-        viewModel.initialize()
-        viewModel.stats.bind {_ in
+        vm.initialize()
+        vm.stats.bind {_ in
             self.userProfileStatsTableView.reloadData()
         }
         setupScrollView()
@@ -48,7 +48,7 @@ class UserProfileViewController: UIViewController {
     }
     
     private func setUserProfileInfoViewConstraints() {
-        userProfileInfoView.configureUI(vm: viewModel)
+        userProfileInfoView.configureUI(vm: vm)
         userProfileInfoView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
@@ -69,6 +69,7 @@ class UserProfileViewController: UIViewController {
     }
     
     private func setUserProfileCurrentBeltConstraints() {
+        userProfileCurrentBeltView.configureUI(vm: vm)
         userProfileCurrentBeltView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
@@ -147,6 +148,7 @@ class UserProfileViewController: UIViewController {
     }
     
     private func setUserProfileFavoriteTechniqueViewConstraints() {
+        userProfileFavoriteTechniqueView.configureUI(vm: vm)
         userProfileFavoriteTechniqueView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
@@ -161,12 +163,12 @@ class UserProfileViewController: UIViewController {
 extension UserProfileViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.stats.value?.count ?? 0
+        return vm.stats.value?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = userProfileStatsTableView.dequeueReusableCell(withIdentifier: Cells.statCell) as! UserProfileStatsTableViewCell
-        guard let stats = viewModel.stats.value else {return UITableViewCell()}
+        guard let stats = vm.stats.value else {return UITableViewCell()}
         let userProfileStat = stats[indexPath.row]
         cell.configure(userProfileStat: userProfileStat)
         

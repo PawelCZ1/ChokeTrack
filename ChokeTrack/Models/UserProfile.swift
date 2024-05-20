@@ -8,5 +8,8 @@
 struct UserProfile {
     var name: String?
     var description: String?
+    var trainingsCount: Int?
     var stats: [UserProfileStat]?
+    var belt: Belts?
+    var favoriteTechnique: String?
 }

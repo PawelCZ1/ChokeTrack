@@ -9,25 +9,23 @@ import UIKit
 
 class UserProfileCurrentBeltView: UIView {
     
+    var vm: UserProfileViewModel!
+    
     let userProfileCurrentBeltLabel = UILabel()
     let userProfileCurrentBeltImageView = UIImageView()
     let userProfileChangeCurrentBeltButton = UIButton()
     
-    init() {
-        super.init(frame: .zero)
+    func configureUI(vm: UserProfileViewModel) {
+        self.vm = vm
         setupUserProfileCurrentBeltLabel()
         setupUserProfileCurrentBeltImageView()
         setupUserProfileChangeCurrentBeltButton()
     }
     
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
     private func setupUserProfileCurrentBeltLabel() {
         addSubview(userProfileCurrentBeltLabel)
         
-        userProfileCurrentBeltLabel.text = "Current belt"
+        userProfileCurrentBeltLabel.text = Strings.currentBelt
         userProfileCurrentBeltLabel.textColor = .black
         userProfileCurrentBeltLabel.textAlignment = .center
         userProfileCurrentBeltLabel.font = .boldSystemFont(ofSize: 18)
@@ -42,8 +40,12 @@ class UserProfileCurrentBeltView: UIView {
     
     private func setupUserProfileCurrentBeltImageView() {
         addSubview(userProfileCurrentBeltImageView)
+        if let belt = vm.belt.value {
+            userProfileCurrentBeltImageView.image = Belts.image(for: belt ?? Belts.White)
+        } else {
+            userProfileCurrentBeltImageView.image = Belts.image(for:Belts.White)
+        }
         
-        userProfileCurrentBeltImageView.image = UIImage(named: "white_belt_icon")
         userProfileCurrentBeltImageView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([

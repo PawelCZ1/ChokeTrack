@@ -9,17 +9,19 @@ import UIKit
 
 class UserProfileInfoView: UIView {
     
+    var vm: UserProfileViewModel!
+    
     let userProfileIconImageView = UIImageView()
     let userProfileNameLabel = UILabel()
-    let userProfileTrainingCountLabel = UILabel()
+    let userProfileTrainingsCountLabel = UILabel()
     let userProfileDescriptionLabel = UILabel()
     
     func configureUI(vm: UserProfileViewModel) {
-        
+        self.vm = vm
         setupUserProfileIconImageView()
-        setupUserProfileNameLabel(vm: vm)
-        setupUserProfileTrainingCountLabel()
-        setupUserProfileDescriptionLabel(vm: vm)
+        setupUserProfileNameLabel()
+        setupUserProfileTrainingsCountLabel()
+        setupUserProfileDescriptionLabel()
     }
     
     private func setupUserProfileIconImageView() {
@@ -39,7 +41,7 @@ class UserProfileInfoView: UIView {
         ])
     }
     
-    private func setupUserProfileNameLabel(vm: UserProfileViewModel) {
+    private func setupUserProfileNameLabel() {
         addSubview(userProfileNameLabel)
         
         userProfileNameLabel.text = vm.name.value ?? ""
@@ -57,22 +59,32 @@ class UserProfileInfoView: UIView {
         ])
     }
     
-    private func setupUserProfileTrainingCountLabel() {
-        addSubview(userProfileTrainingCountLabel)
+    private func setupUserProfileTrainingsCountLabel() {
+        addSubview(userProfileTrainingsCountLabel)
         
-        userProfileTrainingCountLabel.text = "Trainings: 0"
-        userProfileTrainingCountLabel.textColor = .black
-        userProfileTrainingCountLabel.translatesAutoresizingMaskIntoConstraints = false
+        if let trainingsCount = vm.trainingsCount.value {
+            userProfileTrainingsCountLabel.text = "Trainings: \(trainingsCount)"
+        } else {
+            userProfileTrainingsCountLabel.text = "Trainings: 0" // or some other default value
+        }
+        vm.trainingsCount.bind { value in
+            guard let value = value else { return }
+            self.userProfileTrainingsCountLabel.text = "Trainings: \(value)"
+        }
+
+        userProfileTrainingsCountLabel.textColor = .black
+        userProfileTrainingsCountLabel.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            userProfileTrainingCountLabel.leadingAnchor.constraint(equalTo: userProfileIconImageView.trailingAnchor, constant: 8),
-            userProfileTrainingCountLabel.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor),
-            userProfileTrainingCountLabel.bottomAnchor.constraint(equalTo: userProfileIconImageView.bottomAnchor, constant: -8)
+            userProfileTrainingsCountLabel.leadingAnchor.constraint(equalTo: userProfileIconImageView.trailingAnchor, constant: 8),
+            userProfileTrainingsCountLabel.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor),
+            userProfileTrainingsCountLabel.bottomAnchor.constraint(equalTo: userProfileIconImageView.bottomAnchor, constant: -8)
         ])
     }
     
-    private func setupUserProfileDescriptionLabel(vm: UserProfileViewModel) {
+    private func setupUserProfileDescriptionLabel() {
         addSubview(userProfileDescriptionLabel)
+        
         
         userProfileDescriptionLabel.text = vm.description.value ?? ""
         vm.description.bind { value in
