@@ -20,6 +20,7 @@ class UserProfileViewController: UIViewController {
     let userProfileNavigationItem = UINavigationItem()
     let scrollView = UIScrollView()
     let contentView = UIView()
+    let userProfileLabel = UILabel()
     let userProfileInfoView = UserProfileInfoView()
     let userProfileCurrentBeltView = UserProfileCurrentBeltView()
     let userProfileStatsTableView = UITableView()
@@ -36,6 +37,7 @@ class UserProfileViewController: UIViewController {
         setupNavigationBar()
         setupScrollView()
         setupContentView()
+        setupUserProfileLabel()
         addUserProfileInfoView()
         addUserProfileCurrentBeltView()
         setupUserProfileStatsTableView()
@@ -60,7 +62,7 @@ class UserProfileViewController: UIViewController {
         navigationBar.backgroundColor = .darkRose
         navigationBar.barTintColor = .darkRose
         navigationBar.isTranslucent = false
-        userProfileNavigationItem.title = "User Profile"
+        //userProfileNavigationItem.title = "User Profile"
         
 //        let settingsButton = UIBarButtonItem(image: UIImage(systemName: "settings"),
 //                                             style: .plain,
@@ -108,6 +110,22 @@ class UserProfileViewController: UIViewController {
         // Handle the settings button tap event
         print("Settings button tapped!")
     }
+    
+    private func setupUserProfileLabel() {
+        contentView.addSubview(userProfileLabel)
+        
+        userProfileLabel.text = "User Profile"
+        userProfileLabel.textColor = .darkRose
+        userProfileLabel.font = UIFont.systemFont(ofSize: 36)
+        
+        userProfileLabel.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            userProfileLabel.topAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.topAnchor, constant: 32),
+            userProfileLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 32),
+            userProfileLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -32),
+        ])
+    }
 
     private func addUserProfileInfoView() {
         contentView.addSubview(userProfileInfoView)
@@ -123,7 +141,7 @@ class UserProfileViewController: UIViewController {
         userProfileInfoView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            userProfileInfoView.topAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.topAnchor, constant: 32),
+            userProfileInfoView.topAnchor.constraint(equalTo: userProfileLabel.bottomAnchor, constant: 32),
             userProfileInfoView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 32),
             userProfileInfoView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -32),
             userProfileInfoView.heightAnchor.constraint(equalToConstant: 200)
