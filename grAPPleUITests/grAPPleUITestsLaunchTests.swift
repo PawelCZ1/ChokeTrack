@@ -1,13 +1,13 @@
 //
-//  ChokeTrackUITestsLaunchTests.swift
-//  ChokeTrackUITests
+//  grAPPleUITestsLaunchTests.swift
+//  grAPPleUITests
 //
 //  Created by Paweł Czapran on 14/05/2024.
 //
 
 import XCTest
 
-final class ChokeTrackUITestsLaunchTests: XCTestCase {
+final class grAPPleUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

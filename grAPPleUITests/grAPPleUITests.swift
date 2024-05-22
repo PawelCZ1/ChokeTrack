@@ -1,13 +1,13 @@
 //
-//  ChokeTrackUITests.swift
-//  ChokeTrackUITests
+//  grAPPleUITests.swift
+//  grAPPleUITests
 //
 //  Created by Paweł Czapran on 14/05/2024.
 //
 
 import XCTest
 
-final class ChokeTrackUITests: XCTestCase {
+final class grAPPleUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

@@ -20,9 +20,9 @@
 		22BFD55E2BF3DE610064E051 /* grAPPle.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 22BFD55C2BF3DE610064E051 /* grAPPle.xcdatamodeld */; };
 		22BFD5602BF3DE620064E051 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22BFD55F2BF3DE620064E051 /* Assets.xcassets */; };
 		22BFD5632BF3DE620064E051 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 22BFD5622BF3DE620064E051 /* Base */; };
-		22BFD56E2BF3DE620064E051 /* ChokeTrackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFD56D2BF3DE620064E051 /* ChokeTrackTests.swift */; };
-		22BFD5782BF3DE620064E051 /* ChokeTrackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFD5772BF3DE620064E051 /* ChokeTrackUITests.swift */; };
-		22BFD57A2BF3DE620064E051 /* ChokeTrackUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFD5792BF3DE620064E051 /* ChokeTrackUITestsLaunchTests.swift */; };
+		22BFD56E2BF3DE620064E051 /* grAPPleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFD56D2BF3DE620064E051 /* grAPPleTests.swift */; };
+		22BFD5782BF3DE620064E051 /* grAPPleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFD5772BF3DE620064E051 /* grAPPleUITests.swift */; };
+		22BFD57A2BF3DE620064E051 /* grAPPleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFD5792BF3DE620064E051 /* grAPPleUITestsLaunchTests.swift */; };
 		22BFD58B2BF3EF720064E051 /* UIImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFD58A2BF3EF720064E051 /* UIImageViewExtensions.swift */; };
 		22BFD58E2BF3F78E0064E051 /* UserProfileInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFD58D2BF3F78E0064E051 /* UserProfileInfoView.swift */; };
 		22BFD5902BF3FE0A0064E051 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFD58F2BF3FE0A0064E051 /* UIViewExtensions.swift */; };
@@ -69,10 +69,10 @@
 		22BFD5622BF3DE620064E051 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22BFD5642BF3DE620064E051 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22BFD5692BF3DE620064E051 /* grAPPleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = grAPPleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		22BFD56D2BF3DE620064E051 /* ChokeTrackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChokeTrackTests.swift; sourceTree = "<group>"; };
+		22BFD56D2BF3DE620064E051 /* grAPPleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = grAPPleTests.swift; sourceTree = "<group>"; };
 		22BFD5732BF3DE620064E051 /* grAPPleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = grAPPleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		22BFD5772BF3DE620064E051 /* ChokeTrackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChokeTrackUITests.swift; sourceTree = "<group>"; };
-		22BFD5792BF3DE620064E051 /* ChokeTrackUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChokeTrackUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		22BFD5772BF3DE620064E051 /* grAPPleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = grAPPleUITests.swift; sourceTree = "<group>"; };
+		22BFD5792BF3DE620064E051 /* grAPPleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = grAPPleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		22BFD58A2BF3EF720064E051 /* UIImageViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtensions.swift; sourceTree = "<group>"; };
 		22BFD58D2BF3F78E0064E051 /* UserProfileInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileInfoView.swift; sourceTree = "<group>"; };
 		22BFD58F2BF3FE0A0064E051 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
@@ -144,9 +144,9 @@
 		22BFD5472BF3DE610064E051 = {
 			isa = PBXGroup;
 			children = (
-				22BFD5522BF3DE610064E051 /* ChokeTrack */,
-				22BFD56C2BF3DE620064E051 /* ChokeTrackTests */,
-				22BFD5762BF3DE620064E051 /* ChokeTrackUITests */,
+				22BFD5522BF3DE610064E051 /* grAPPle */,
+				22BFD56C2BF3DE620064E051 /* grAPPleTests */,
+				22BFD5762BF3DE620064E051 /* grAPPleUITests */,
 				22BFD5512BF3DE610064E051 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -161,7 +161,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		22BFD5522BF3DE610064E051 /* ChokeTrack */ = {
+		22BFD5522BF3DE610064E051 /* grAPPle */ = {
 			isa = PBXGroup;
 			children = (
 				220CFC242BFBF174002F3415 /* Localization */,
@@ -182,24 +182,24 @@
 				22BFD5642BF3DE620064E051 /* Info.plist */,
 				22BFD55C2BF3DE610064E051 /* grAPPle.xcdatamodeld */,
 			);
-			path = ChokeTrack;
+			path = grAPPle;
 			sourceTree = "<group>";
 		};
-		22BFD56C2BF3DE620064E051 /* ChokeTrackTests */ = {
+		22BFD56C2BF3DE620064E051 /* grAPPleTests */ = {
 			isa = PBXGroup;
 			children = (
-				22BFD56D2BF3DE620064E051 /* ChokeTrackTests.swift */,
+				22BFD56D2BF3DE620064E051 /* grAPPleTests.swift */,
 			);
-			path = ChokeTrackTests;
+			path = grAPPleTests;
 			sourceTree = "<group>";
 		};
-		22BFD5762BF3DE620064E051 /* ChokeTrackUITests */ = {
+		22BFD5762BF3DE620064E051 /* grAPPleUITests */ = {
 			isa = PBXGroup;
 			children = (
-				22BFD5772BF3DE620064E051 /* ChokeTrackUITests.swift */,
-				22BFD5792BF3DE620064E051 /* ChokeTrackUITestsLaunchTests.swift */,
+				22BFD5772BF3DE620064E051 /* grAPPleUITests.swift */,
+				22BFD5792BF3DE620064E051 /* grAPPleUITestsLaunchTests.swift */,
 			);
-			path = ChokeTrackUITests;
+			path = grAPPleUITests;
 			sourceTree = "<group>";
 		};
 		22BFD5862BF3ECFA0064E051 /* Views */ = {
@@ -412,7 +412,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22BFD56E2BF3DE620064E051 /* ChokeTrackTests.swift in Sources */,
+				22BFD56E2BF3DE620064E051 /* grAPPleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,8 +420,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22BFD5782BF3DE620064E051 /* ChokeTrackUITests.swift in Sources */,
-				22BFD57A2BF3DE620064E051 /* ChokeTrackUITestsLaunchTests.swift in Sources */,
+				22BFD5782BF3DE620064E051 /* grAPPleUITests.swift in Sources */,
+				22BFD57A2BF3DE620064E051 /* grAPPleUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -600,7 +600,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S37782KQ48;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ChokeTrack/Info.plist;
+				INFOPLIST_FILE = grAPPle/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = grAPPle;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -609,7 +610,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pcz.ChokeTrack;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pcz.grAPPle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -630,7 +631,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S37782KQ48;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ChokeTrack/Info.plist;
+				INFOPLIST_FILE = grAPPle/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = grAPPle;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -639,7 +641,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pcz.ChokeTrack;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pcz.grAPPle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
