@@ -17,7 +17,7 @@
 		22BFD5562BF3DE610064E051 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFD5552BF3DE610064E051 /* SceneDelegate.swift */; };
 		22BFD5582BF3DE610064E051 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFD5572BF3DE610064E051 /* UserProfileViewController.swift */; };
 		22BFD55B2BF3DE610064E051 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 22BFD55A2BF3DE610064E051 /* Base */; };
-		22BFD55E2BF3DE610064E051 /* ChokeTrack.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 22BFD55C2BF3DE610064E051 /* ChokeTrack.xcdatamodeld */; };
+		22BFD55E2BF3DE610064E051 /* grAPPle.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 22BFD55C2BF3DE610064E051 /* grAPPle.xcdatamodeld */; };
 		22BFD5602BF3DE620064E051 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22BFD55F2BF3DE620064E051 /* Assets.xcassets */; };
 		22BFD5632BF3DE620064E051 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 22BFD5622BF3DE620064E051 /* Base */; };
 		22BFD56E2BF3DE620064E051 /* ChokeTrackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFD56D2BF3DE620064E051 /* ChokeTrackTests.swift */; };
@@ -59,7 +59,7 @@
 		221D72FC2BF8E35600D7DCEC /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		221D72FF2BF8E70E00D7DCEC /* UserProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewModel.swift; sourceTree = "<group>"; };
 		2257A9B12BFE8FCA00F7F412 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
-		22BFD5502BF3DE610064E051 /* ChokeTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChokeTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		22BFD5502BF3DE610064E051 /* grAPPle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = grAPPle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22BFD5532BF3DE610064E051 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22BFD5552BF3DE610064E051 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		22BFD5572BF3DE610064E051 /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
@@ -68,9 +68,9 @@
 		22BFD55F2BF3DE620064E051 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22BFD5622BF3DE620064E051 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22BFD5642BF3DE620064E051 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		22BFD5692BF3DE620064E051 /* ChokeTrackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChokeTrackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		22BFD5692BF3DE620064E051 /* grAPPleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = grAPPleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22BFD56D2BF3DE620064E051 /* ChokeTrackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChokeTrackTests.swift; sourceTree = "<group>"; };
-		22BFD5732BF3DE620064E051 /* ChokeTrackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChokeTrackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		22BFD5732BF3DE620064E051 /* grAPPleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = grAPPleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22BFD5772BF3DE620064E051 /* ChokeTrackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChokeTrackUITests.swift; sourceTree = "<group>"; };
 		22BFD5792BF3DE620064E051 /* ChokeTrackUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChokeTrackUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		22BFD58A2BF3EF720064E051 /* UIImageViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtensions.swift; sourceTree = "<group>"; };
@@ -154,9 +154,9 @@
 		22BFD5512BF3DE610064E051 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				22BFD5502BF3DE610064E051 /* ChokeTrack.app */,
-				22BFD5692BF3DE620064E051 /* ChokeTrackTests.xctest */,
-				22BFD5732BF3DE620064E051 /* ChokeTrackUITests.xctest */,
+				22BFD5502BF3DE610064E051 /* grAPPle.app */,
+				22BFD5692BF3DE620064E051 /* grAPPleTests.xctest */,
+				22BFD5732BF3DE620064E051 /* grAPPleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -180,7 +180,7 @@
 				22BFD55F2BF3DE620064E051 /* Assets.xcassets */,
 				22BFD5612BF3DE620064E051 /* LaunchScreen.storyboard */,
 				22BFD5642BF3DE620064E051 /* Info.plist */,
-				22BFD55C2BF3DE610064E051 /* ChokeTrack.xcdatamodeld */,
+				22BFD55C2BF3DE610064E051 /* grAPPle.xcdatamodeld */,
 			);
 			path = ChokeTrack;
 			sourceTree = "<group>";
@@ -257,9 +257,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		22BFD54F2BF3DE610064E051 /* ChokeTrack */ = {
+		22BFD54F2BF3DE610064E051 /* grAPPle */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 22BFD57D2BF3DE620064E051 /* Build configuration list for PBXNativeTarget "ChokeTrack" */;
+			buildConfigurationList = 22BFD57D2BF3DE620064E051 /* Build configuration list for PBXNativeTarget "grAPPle" */;
 			buildPhases = (
 				22BFD54C2BF3DE610064E051 /* Sources */,
 				22BFD54D2BF3DE610064E051 /* Frameworks */,
@@ -269,14 +269,14 @@
 			);
 			dependencies = (
 			);
-			name = ChokeTrack;
+			name = grAPPle;
 			productName = ChokeTrack;
-			productReference = 22BFD5502BF3DE610064E051 /* ChokeTrack.app */;
+			productReference = 22BFD5502BF3DE610064E051 /* grAPPle.app */;
 			productType = "com.apple.product-type.application";
 		};
-		22BFD5682BF3DE620064E051 /* ChokeTrackTests */ = {
+		22BFD5682BF3DE620064E051 /* grAPPleTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 22BFD5802BF3DE620064E051 /* Build configuration list for PBXNativeTarget "ChokeTrackTests" */;
+			buildConfigurationList = 22BFD5802BF3DE620064E051 /* Build configuration list for PBXNativeTarget "grAPPleTests" */;
 			buildPhases = (
 				22BFD5652BF3DE620064E051 /* Sources */,
 				22BFD5662BF3DE620064E051 /* Frameworks */,
@@ -287,14 +287,14 @@
 			dependencies = (
 				22BFD56B2BF3DE620064E051 /* PBXTargetDependency */,
 			);
-			name = ChokeTrackTests;
+			name = grAPPleTests;
 			productName = ChokeTrackTests;
-			productReference = 22BFD5692BF3DE620064E051 /* ChokeTrackTests.xctest */;
+			productReference = 22BFD5692BF3DE620064E051 /* grAPPleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		22BFD5722BF3DE620064E051 /* ChokeTrackUITests */ = {
+		22BFD5722BF3DE620064E051 /* grAPPleUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 22BFD5832BF3DE620064E051 /* Build configuration list for PBXNativeTarget "ChokeTrackUITests" */;
+			buildConfigurationList = 22BFD5832BF3DE620064E051 /* Build configuration list for PBXNativeTarget "grAPPleUITests" */;
 			buildPhases = (
 				22BFD56F2BF3DE620064E051 /* Sources */,
 				22BFD5702BF3DE620064E051 /* Frameworks */,
@@ -305,9 +305,9 @@
 			dependencies = (
 				22BFD5752BF3DE620064E051 /* PBXTargetDependency */,
 			);
-			name = ChokeTrackUITests;
+			name = grAPPleUITests;
 			productName = ChokeTrackUITests;
-			productReference = 22BFD5732BF3DE620064E051 /* ChokeTrackUITests.xctest */;
+			productReference = 22BFD5732BF3DE620064E051 /* grAPPleUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -333,7 +333,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 22BFD54B2BF3DE610064E051 /* Build configuration list for PBXProject "ChokeTrack" */;
+			buildConfigurationList = 22BFD54B2BF3DE610064E051 /* Build configuration list for PBXProject "grAPPle" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -348,9 +348,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				22BFD54F2BF3DE610064E051 /* ChokeTrack */,
-				22BFD5682BF3DE620064E051 /* ChokeTrackTests */,
-				22BFD5722BF3DE620064E051 /* ChokeTrackUITests */,
+				22BFD54F2BF3DE610064E051 /* grAPPle */,
+				22BFD5682BF3DE620064E051 /* grAPPleTests */,
+				22BFD5722BF3DE620064E051 /* grAPPleUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -395,7 +395,7 @@
 				22C9E3402BF69C1F0001324F /* UserProfileStat.swift in Sources */,
 				22BFD5542BF3DE610064E051 /* AppDelegate.swift in Sources */,
 				221D72FD2BF8E35600D7DCEC /* Observable.swift in Sources */,
-				22BFD55E2BF3DE610064E051 /* ChokeTrack.xcdatamodeld in Sources */,
+				22BFD55E2BF3DE610064E051 /* grAPPle.xcdatamodeld in Sources */,
 				22FD50482BF97F310075D4A8 /* UserProfileMockData.swift in Sources */,
 				221D73002BF8E70E00D7DCEC /* UserProfileViewModel.swift in Sources */,
 				22BFD58B2BF3EF720064E051 /* UIImageViewExtensions.swift in Sources */,
@@ -430,12 +430,12 @@
 /* Begin PBXTargetDependency section */
 		22BFD56B2BF3DE620064E051 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 22BFD54F2BF3DE610064E051 /* ChokeTrack */;
+			target = 22BFD54F2BF3DE610064E051 /* grAPPle */;
 			targetProxy = 22BFD56A2BF3DE620064E051 /* PBXContainerItemProxy */;
 		};
 		22BFD5752BF3DE620064E051 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 22BFD54F2BF3DE610064E051 /* ChokeTrack */;
+			target = 22BFD54F2BF3DE610064E051 /* grAPPle */;
 			targetProxy = 22BFD5742BF3DE620064E051 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -667,7 +667,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChokeTrack.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ChokeTrack";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/grAPPle.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/grAPPle";
 			};
 			name = Debug;
 		};
@@ -687,7 +687,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChokeTrack.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ChokeTrack";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/grAPPle.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/grAPPle";
 			};
 			name = Release;
 		};
@@ -730,7 +730,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		22BFD54B2BF3DE610064E051 /* Build configuration list for PBXProject "ChokeTrack" */ = {
+		22BFD54B2BF3DE610064E051 /* Build configuration list for PBXProject "grAPPle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				22BFD57B2BF3DE620064E051 /* Debug */,
@@ -739,7 +739,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		22BFD57D2BF3DE620064E051 /* Build configuration list for PBXNativeTarget "ChokeTrack" */ = {
+		22BFD57D2BF3DE620064E051 /* Build configuration list for PBXNativeTarget "grAPPle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				22BFD57E2BF3DE620064E051 /* Debug */,
@@ -748,7 +748,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		22BFD5802BF3DE620064E051 /* Build configuration list for PBXNativeTarget "ChokeTrackTests" */ = {
+		22BFD5802BF3DE620064E051 /* Build configuration list for PBXNativeTarget "grAPPleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				22BFD5812BF3DE620064E051 /* Debug */,
@@ -757,7 +757,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		22BFD5832BF3DE620064E051 /* Build configuration list for PBXNativeTarget "ChokeTrackUITests" */ = {
+		22BFD5832BF3DE620064E051 /* Build configuration list for PBXNativeTarget "grAPPleUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				22BFD5842BF3DE620064E051 /* Debug */,
@@ -769,13 +769,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		22BFD55C2BF3DE610064E051 /* ChokeTrack.xcdatamodeld */ = {
+		22BFD55C2BF3DE610064E051 /* grAPPle.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				22BFD55D2BF3DE610064E051 /* ChokeTrack.xcdatamodel */,
 			);
 			currentVersion = 22BFD55D2BF3DE610064E051 /* ChokeTrack.xcdatamodel */;
-			path = ChokeTrack.xcdatamodeld;
+			path = grAPPle.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
