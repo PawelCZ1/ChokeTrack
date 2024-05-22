@@ -15,7 +15,9 @@ class UserProfileViewController: UIViewController {
         static let statCell = "StatCell"
     }
     
-    
+    let safeAreaView = UIView()
+    let navigationBar = UINavigationBar()
+    let userProfileNavigationItem = UINavigationItem()
     let scrollView = UIScrollView()
     let contentView = UIView()
     let userProfileInfoView = UserProfileInfoView()
@@ -30,6 +32,8 @@ class UserProfileViewController: UIViewController {
         vm.stats.bind {_ in
             self.userProfileStatsTableView.reloadData()
         }
+        setupSafeAreaView()
+        setupNavigationBar()
         setupScrollView()
         setupContentView()
         addUserProfileInfoView()
@@ -38,6 +42,73 @@ class UserProfileViewController: UIViewController {
         addUserProfileFavoriteTechniqueView()
     }
     
+    private func setupSafeAreaView() {
+        view.addSubview(safeAreaView)
+        safeAreaView.backgroundColor = .darkRose
+        safeAreaView.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            safeAreaView.topAnchor.constraint(equalTo: view.topAnchor),
+            safeAreaView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            safeAreaView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            safeAreaView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor)
+        ])
+    }
+    
+    private func setupNavigationBar() {
+        view.addSubview(navigationBar)
+        navigationBar.backgroundColor = .darkRose
+        navigationBar.barTintColor = .darkRose
+        navigationBar.isTranslucent = false
+        userProfileNavigationItem.title = "User Profile"
+        
+//        let settingsButton = UIBarButtonItem(image: UIImage(systemName: "settings"),
+//                                             style: .plain,
+//                                             target: self,
+//                                             action: #selector(settingsButtonTapped))
+
+        
+        
+        let settingsButton: UIButton = UIButton(type: UIButton.ButtonType.custom)
+        settingsButton.setTitle("Settings", for: .normal)
+        settingsButton.setTitleColor(.darkerRose, for: .normal)
+        settingsButton.addTarget(self, action: #selector(settingsButtonTapped), for: UIControl.Event.touchUpInside)
+        settingsButton.frame = CGRectMake(0, 0, 53, 31)
+
+        let barButton = UIBarButtonItem(customView: settingsButton)
+        
+        userProfileNavigationItem.rightBarButtonItem = barButton
+
+        navigationBar.items = [userProfileNavigationItem]
+        navigationBar.translatesAutoresizingMaskIntoConstraints = false
+        
+        var topSafeAreaHeight: CGFloat = 0
+        if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
+            let window = windowScene.windows.first
+            let safeFrame = window?.safeAreaLayoutGuide.layoutFrame
+            topSafeAreaHeight = safeFrame?.minY ?? 0
+            NSLayoutConstraint.activate([
+                navigationBar.topAnchor.constraint(equalTo: safeAreaView.bottomAnchor),
+                navigationBar.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+                navigationBar.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+                navigationBar.heightAnchor.constraint(equalToConstant: topSafeAreaHeight * 0.75)
+            ])
+        } else {
+            NSLayoutConstraint.activate([
+                navigationBar.topAnchor.constraint(equalTo: safeAreaView.bottomAnchor),
+                navigationBar.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+                navigationBar.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+                navigationBar.heightAnchor.constraint(equalToConstant: 59)
+            ])
+        }
+
+    }
+    
+    @objc func settingsButtonTapped() {
+        // Handle the settings button tap event
+        print("Settings button tapped!")
+    }
+
     private func addUserProfileInfoView() {
         contentView.addSubview(userProfileInfoView)
         userProfileInfoView.backgroundColor = .darkRose
@@ -90,7 +161,7 @@ class UserProfileViewController: UIViewController {
         scrollView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            scrollView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            scrollView.topAnchor.constraint(equalTo: navigationBar.bottomAnchor),
             scrollView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
             scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor)

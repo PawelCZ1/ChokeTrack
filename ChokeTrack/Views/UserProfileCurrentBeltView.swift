@@ -25,7 +25,7 @@ class UserProfileCurrentBeltView: UIView {
     private func setupUserProfileCurrentBeltLabel() {
         addSubview(userProfileCurrentBeltLabel)
         
-        userProfileCurrentBeltLabel.text = Strings.currentBelt
+        userProfileCurrentBeltLabel.text = String.currentBelt
         userProfileCurrentBeltLabel.textColor = .black
         userProfileCurrentBeltLabel.textAlignment = .center
         userProfileCurrentBeltLabel.font = .boldSystemFont(ofSize: 18)

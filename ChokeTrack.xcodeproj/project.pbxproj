@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		22093E252BF54D6C0059FC11 /* UserProfileCurrentBeltView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22093E242BF54D6C0059FC11 /* UserProfileCurrentBeltView.swift */; };
 		220CFC232BFBD736002F3415 /* Belts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220CFC222BFBD736002F3415 /* Belts.swift */; };
-		220CFC262BFBF1BA002F3415 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220CFC252BFBF1BA002F3415 /* Strings.swift */; };
+		220CFC262BFBF1BA002F3415 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220CFC252BFBF1BA002F3415 /* String.swift */; };
 		220CFC292BFBF32F002F3415 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 220CFC272BFBF32F002F3415 /* Localizable.strings */; };
 		221D72FD2BF8E35600D7DCEC /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221D72FC2BF8E35600D7DCEC /* Observable.swift */; };
 		221D73002BF8E70E00D7DCEC /* UserProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221D72FF2BF8E70E00D7DCEC /* UserProfileViewModel.swift */; };
@@ -53,11 +53,12 @@
 /* Begin PBXFileReference section */
 		22093E242BF54D6C0059FC11 /* UserProfileCurrentBeltView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileCurrentBeltView.swift; sourceTree = "<group>"; };
 		220CFC222BFBD736002F3415 /* Belts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Belts.swift; sourceTree = "<group>"; };
-		220CFC252BFBF1BA002F3415 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		220CFC252BFBF1BA002F3415 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		220CFC282BFBF32F002F3415 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		220CFC2A2BFBF3B1002F3415 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		221D72FC2BF8E35600D7DCEC /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		221D72FF2BF8E70E00D7DCEC /* UserProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewModel.swift; sourceTree = "<group>"; };
+		2257A9B12BFE8FCA00F7F412 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		22BFD5502BF3DE610064E051 /* ChokeTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChokeTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22BFD5532BF3DE610064E051 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22BFD5552BF3DE610064E051 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,7 +119,7 @@
 		220CFC242BFBF174002F3415 /* Localization */ = {
 			isa = PBXGroup;
 			children = (
-				220CFC252BFBF1BA002F3415 /* Strings.swift */,
+				220CFC252BFBF1BA002F3415 /* String.swift */,
 				220CFC272BFBF32F002F3415 /* Localizable.strings */,
 			);
 			path = Localization;
@@ -340,6 +341,7 @@
 				en,
 				Base,
 				pl,
+				es,
 			);
 			mainGroup = 22BFD5472BF3DE610064E051;
 			productRefGroup = 22BFD5512BF3DE610064E051 /* Products */;
@@ -398,7 +400,7 @@
 				221D73002BF8E70E00D7DCEC /* UserProfileViewModel.swift in Sources */,
 				22BFD58B2BF3EF720064E051 /* UIImageViewExtensions.swift in Sources */,
 				22BFD5562BF3DE610064E051 /* SceneDelegate.swift in Sources */,
-				220CFC262BFBF1BA002F3415 /* Strings.swift in Sources */,
+				220CFC262BFBF1BA002F3415 /* String.swift in Sources */,
 				22C9E33D2BF692FC0001324F /* UserProfileStatsTableViewCell.swift in Sources */,
 				22BFD58E2BF3F78E0064E051 /* UserProfileInfoView.swift in Sources */,
 				22F5729D2BF80636007E61AA /* UserProfileFavoriteTechniqueView.swift in Sources */,
@@ -444,6 +446,7 @@
 			children = (
 				220CFC282BFBF32F002F3415 /* en */,
 				220CFC2A2BFBF3B1002F3415 /* pl */,
+				2257A9B12BFE8FCA00F7F412 /* es */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
