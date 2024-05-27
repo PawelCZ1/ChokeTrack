@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        window?.rootViewController = UserProfileViewController()
+        window?.rootViewController = UINavigationController(rootViewController: UserProfileViewController())
         window?.makeKeyAndVisible()
     }
 

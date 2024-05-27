@@ -16,7 +16,6 @@ class UserProfileViewController: UIViewController {
     }
     
     let safeAreaView = UIView()
-    let navigationBar = UINavigationBar()
     let userProfileNavigationItem = UINavigationItem()
     let scrollView = UIScrollView()
     let contentView = UIView()
@@ -48,29 +47,28 @@ class UserProfileViewController: UIViewController {
         view.addSubview(safeAreaView)
         safeAreaView.backgroundColor = .darkRose
         safeAreaView.translatesAutoresizingMaskIntoConstraints = false
-        
-        NSLayoutConstraint.activate([
-            safeAreaView.topAnchor.constraint(equalTo: view.topAnchor),
-            safeAreaView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            safeAreaView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            safeAreaView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor)
-        ])
+        var topSafeAreaHeight: CGFloat = 0
+        if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
+            let window = windowScene.windows.first
+            let safeFrame = window?.safeAreaLayoutGuide.layoutFrame
+            topSafeAreaHeight = safeFrame?.minY ?? 0
+            NSLayoutConstraint.activate([
+                safeAreaView.topAnchor.constraint(equalTo: view.topAnchor),
+                safeAreaView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+                safeAreaView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+                safeAreaView.heightAnchor.constraint(equalToConstant: topSafeAreaHeight)
+            ])
+        } else {
+            NSLayoutConstraint.activate([
+                safeAreaView.topAnchor.constraint(equalTo: view.topAnchor),
+                safeAreaView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+                safeAreaView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+                safeAreaView.heightAnchor.constraint(equalToConstant: 59)
+            ])
+        }
     }
     
     private func setupNavigationBar() {
-        view.addSubview(navigationBar)
-        navigationBar.backgroundColor = .darkRose
-        navigationBar.barTintColor = .darkRose
-        navigationBar.isTranslucent = false
-        //userProfileNavigationItem.title = "User Profile"
-        
-//        let settingsButton = UIBarButtonItem(image: UIImage(systemName: "settings"),
-//                                             style: .plain,
-//                                             target: self,
-//                                             action: #selector(settingsButtonTapped))
-
-        
-        
         let settingsButton: UIButton = UIButton(type: UIButton.ButtonType.custom)
         settingsButton.setTitle("Settings", for: .normal)
         settingsButton.setTitleColor(.darkerRose, for: .normal)
@@ -78,37 +76,18 @@ class UserProfileViewController: UIViewController {
         settingsButton.frame = CGRectMake(0, 0, 53, 31)
 
         let barButton = UIBarButtonItem(customView: settingsButton)
+        navigationItem.rightBarButtonItem = barButton
         
-        userProfileNavigationItem.rightBarButtonItem = barButton
-
-        navigationBar.items = [userProfileNavigationItem]
-        navigationBar.translatesAutoresizingMaskIntoConstraints = false
-        
-        var topSafeAreaHeight: CGFloat = 0
-        if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
-            let window = windowScene.windows.first
-            let safeFrame = window?.safeAreaLayoutGuide.layoutFrame
-            topSafeAreaHeight = safeFrame?.minY ?? 0
-            NSLayoutConstraint.activate([
-                navigationBar.topAnchor.constraint(equalTo: safeAreaView.bottomAnchor),
-                navigationBar.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-                navigationBar.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-                navigationBar.heightAnchor.constraint(equalToConstant: topSafeAreaHeight * 0.75)
-            ])
-        } else {
-            NSLayoutConstraint.activate([
-                navigationBar.topAnchor.constraint(equalTo: safeAreaView.bottomAnchor),
-                navigationBar.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-                navigationBar.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-                navigationBar.heightAnchor.constraint(equalToConstant: 59)
-            ])
-        }
-
+        let barApperance = UINavigationBarAppearance()
+        barApperance.configureWithOpaqueBackground()
+        barApperance.backgroundColor = .darkRose
+        self.navigationController?.navigationBar.standardAppearance = barApperance
+        self.navigationController?.navigationBar.scrollEdgeAppearance = barApperance
     }
     
     @objc func settingsButtonTapped() {
-        // Handle the settings button tap event
-        print("Settings button tapped!")
+        let settingsVC = SettingsViewController()
+        self.navigationController?.pushViewController(settingsVC, animated: true)
     }
     
     private func setupUserProfileLabel() {
@@ -179,7 +158,7 @@ class UserProfileViewController: UIViewController {
         scrollView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            scrollView.topAnchor.constraint(equalTo: navigationBar.bottomAnchor),
+            scrollView.topAnchor.constraint(equalTo: safeAreaView.bottomAnchor),
             scrollView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
             scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
@@ -223,7 +202,7 @@ class UserProfileViewController: UIViewController {
             userProfileStatsTableView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 32),
             userProfileStatsTableView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -32)
             ,
-            userProfileStatsTableView.heightAnchor.constraint(equalToConstant: 125)
+            userProfileStatsTableView.heightAnchor.constraint(equalToConstant: 25 * CGFloat(vm.stats.value?.count ?? 0))
         ])
     }
     
