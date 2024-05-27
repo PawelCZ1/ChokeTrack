@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import ChokeTrack
+@testable import grAPPle
 
 final class grAppleTests: XCTestCase {
 

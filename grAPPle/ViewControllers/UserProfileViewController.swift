@@ -78,6 +78,11 @@ class UserProfileViewController: UIViewController {
         let barButton = UIBarButtonItem(customView: settingsButton)
         navigationItem.rightBarButtonItem = barButton
         
+        let backButton = UIBarButtonItem(title: "Back", style: .plain, target: nil, action: nil)
+        backButton.tintColor = .darkerRose
+        
+        navigationItem.backBarButtonItem = backButton
+        
         let barApperance = UINavigationBarAppearance()
         barApperance.configureWithOpaqueBackground()
         barApperance.backgroundColor = .darkRose
