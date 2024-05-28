@@ -11,10 +11,6 @@ class UserProfileViewController: UIViewController {
     
     let vm = UserProfileViewModel()
     
-    struct Cells {
-        static let statCell = "StatCell"
-    }
-    
     let safeAreaView = UIView()
     let userProfileNavigationItem = UINavigationItem()
     let scrollView = UIScrollView()
@@ -193,7 +189,6 @@ class UserProfileViewController: UIViewController {
         
         userProfileStatsTableView.backgroundColor = .darkRose
         userProfileStatsTableView.isScrollEnabled = false
-        //userProfileStatsTableView.is
         userProfileStatsTableView.rowHeight = 25
         userProfileStatsTableView.register(UserProfileStatsTableViewCell.self, forCellReuseIdentifier: Cells.statCell)
         DispatchQueue.main.async(execute:{

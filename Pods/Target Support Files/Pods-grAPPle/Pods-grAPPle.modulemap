@@ -1,0 +1,6 @@
+framework module Pods_grAPPle {
+  umbrella header "Pods-grAPPle-umbrella.h"
+
+  export *
+  module * { export * }
+}

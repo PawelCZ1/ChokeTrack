@@ -1,0 +1,6 @@
+framework module Pods_grAPPleTests {
+  umbrella header "Pods-grAPPleTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

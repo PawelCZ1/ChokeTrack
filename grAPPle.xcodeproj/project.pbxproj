@@ -33,6 +33,13 @@
 		22F5729D2BF80636007E61AA /* UserProfileFavoriteTechniqueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F5729C2BF80636007E61AA /* UserProfileFavoriteTechniqueView.swift */; };
 		22FD50482BF97F310075D4A8 /* UserProfileMockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FD50472BF97F310075D4A8 /* UserProfileMockData.swift */; };
 		22FD504A2BF97F870075D4A8 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FD50492BF97F870075D4A8 /* UserProfile.swift */; };
+		22FDD8BB2C064ED800F01B0B /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FDD8BA2C064ED800F01B0B /* Setting.swift */; };
+		22FDD8BD2C06523E00F01B0B /* Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FDD8BC2C06523E00F01B0B /* Cells.swift */; };
+		22FDD8BF2C0656E800F01B0B /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FDD8BE2C0656E800F01B0B /* SettingsTableViewCell.swift */; };
+		22FDD8C32C068E8C00F01B0B /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 22FDD8C22C068E8C00F01B0B /* Podfile */; };
+		739FCD41F5123ADF1CBF4D34 /* Pods_grAPPleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 145D15D60847FBF0B55AFD27 /* Pods_grAPPleTests.framework */; };
+		AD0D489C1468D66B667DFA1C /* Pods_grAPPle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25983A6BCC5048F2A80F794 /* Pods_grAPPle.framework */; };
+		F0E3B2601535C3A95E0320A9 /* Pods_grAPPle_grAPPleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7FE9F1AB4D21A42CFD29BF5 /* Pods_grAPPle_grAPPleUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +60,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		145D15D60847FBF0B55AFD27 /* Pods_grAPPleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_grAPPleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		206B9D6BB135DD92FD328B82 /* Pods-grAPPle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-grAPPle.debug.xcconfig"; path = "Target Support Files/Pods-grAPPle/Pods-grAPPle.debug.xcconfig"; sourceTree = "<group>"; };
 		22093E242BF54D6C0059FC11 /* UserProfileCurrentBeltView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileCurrentBeltView.swift; sourceTree = "<group>"; };
 		220CFC222BFBD736002F3415 /* Belts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Belts.swift; sourceTree = "<group>"; };
 		220CFC252BFBF1BA002F3415 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
@@ -85,6 +94,17 @@
 		22F5729C2BF80636007E61AA /* UserProfileFavoriteTechniqueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileFavoriteTechniqueView.swift; sourceTree = "<group>"; };
 		22FD50472BF97F310075D4A8 /* UserProfileMockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileMockData.swift; sourceTree = "<group>"; };
 		22FD50492BF97F870075D4A8 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		22FDD8BA2C064ED800F01B0B /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
+		22FDD8BC2C06523E00F01B0B /* Cells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cells.swift; sourceTree = "<group>"; };
+		22FDD8BE2C0656E800F01B0B /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
+		22FDD8C22C068E8C00F01B0B /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		3A409B7BB85E43AF3900013D /* Pods-grAPPle-grAPPleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-grAPPle-grAPPleUITests.release.xcconfig"; path = "Target Support Files/Pods-grAPPle-grAPPleUITests/Pods-grAPPle-grAPPleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3BBD75ECE8E0E90CC30F8FBE /* Pods-grAPPleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-grAPPleTests.release.xcconfig"; path = "Target Support Files/Pods-grAPPleTests/Pods-grAPPleTests.release.xcconfig"; sourceTree = "<group>"; };
+		5C60F21528F8917B5B52BB78 /* Pods-grAPPle-grAPPleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-grAPPle-grAPPleUITests.debug.xcconfig"; path = "Target Support Files/Pods-grAPPle-grAPPleUITests/Pods-grAPPle-grAPPleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6C18D0D0A84E0D602AD738BF /* Pods-grAPPleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-grAPPleTests.debug.xcconfig"; path = "Target Support Files/Pods-grAPPleTests/Pods-grAPPleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B7FE9F1AB4D21A42CFD29BF5 /* Pods_grAPPle_grAPPleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_grAPPle_grAPPleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C25983A6BCC5048F2A80F794 /* Pods_grAPPle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_grAPPle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE3EAAEA3BCFCC8C4300E7E7 /* Pods-grAPPle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-grAPPle.release.xcconfig"; path = "Target Support Files/Pods-grAPPle/Pods-grAPPle.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD0D489C1468D66B667DFA1C /* Pods_grAPPle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				739FCD41F5123ADF1CBF4D34 /* Pods_grAPPleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0E3B2601535C3A95E0320A9 /* Pods_grAPPle_grAPPleUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				220CFC222BFBD736002F3415 /* Belts.swift */,
+				22FDD8BC2C06523E00F01B0B /* Cells.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -148,10 +172,13 @@
 		22BFD5472BF3DE610064E051 = {
 			isa = PBXGroup;
 			children = (
+				22FDD8C22C068E8C00F01B0B /* Podfile */,
 				22BFD5522BF3DE610064E051 /* grAPPle */,
 				22BFD56C2BF3DE620064E051 /* grAPPleTests */,
 				22BFD5762BF3DE620064E051 /* grAPPleUITests */,
 				22BFD5512BF3DE610064E051 /* Products */,
+				E7C12B9E768B70F0FCC9CA86 /* Pods */,
+				93CF5BE1AB5395A5C6819246 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -239,6 +266,7 @@
 			isa = PBXGroup;
 			children = (
 				22C9E33C2BF692FC0001324F /* UserProfileStatsTableViewCell.swift */,
+				22FDD8BE2C0656E800F01B0B /* SettingsTableViewCell.swift */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -248,6 +276,7 @@
 			children = (
 				22C9E33F2BF69C1F0001324F /* UserProfileStat.swift */,
 				22FD50492BF97F870075D4A8 /* UserProfile.swift */,
+				22FDD8BA2C064ED800F01B0B /* Setting.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -260,6 +289,30 @@
 			path = MockData;
 			sourceTree = "<group>";
 		};
+		93CF5BE1AB5395A5C6819246 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C25983A6BCC5048F2A80F794 /* Pods_grAPPle.framework */,
+				B7FE9F1AB4D21A42CFD29BF5 /* Pods_grAPPle_grAPPleUITests.framework */,
+				145D15D60847FBF0B55AFD27 /* Pods_grAPPleTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E7C12B9E768B70F0FCC9CA86 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				206B9D6BB135DD92FD328B82 /* Pods-grAPPle.debug.xcconfig */,
+				CE3EAAEA3BCFCC8C4300E7E7 /* Pods-grAPPle.release.xcconfig */,
+				5C60F21528F8917B5B52BB78 /* Pods-grAPPle-grAPPleUITests.debug.xcconfig */,
+				3A409B7BB85E43AF3900013D /* Pods-grAPPle-grAPPleUITests.release.xcconfig */,
+				6C18D0D0A84E0D602AD738BF /* Pods-grAPPleTests.debug.xcconfig */,
+				3BBD75ECE8E0E90CC30F8FBE /* Pods-grAPPleTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -267,9 +320,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22BFD57D2BF3DE620064E051 /* Build configuration list for PBXNativeTarget "grAPPle" */;
 			buildPhases = (
+				9E4786C60E990A6C01DF1F64 /* [CP] Check Pods Manifest.lock */,
 				22BFD54C2BF3DE610064E051 /* Sources */,
 				22BFD54D2BF3DE610064E051 /* Frameworks */,
 				22BFD54E2BF3DE610064E051 /* Resources */,
+				B1808A54B21412D0E2D74D50 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -284,6 +339,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22BFD5802BF3DE620064E051 /* Build configuration list for PBXNativeTarget "grAPPleTests" */;
 			buildPhases = (
+				2FE5F474B51F5F1C25730FBA /* [CP] Check Pods Manifest.lock */,
 				22BFD5652BF3DE620064E051 /* Sources */,
 				22BFD5662BF3DE620064E051 /* Frameworks */,
 				22BFD5672BF3DE620064E051 /* Resources */,
@@ -302,9 +358,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22BFD5832BF3DE620064E051 /* Build configuration list for PBXNativeTarget "grAPPleUITests" */;
 			buildPhases = (
+				9D4C2C930A86D4BE4B49C564 /* [CP] Check Pods Manifest.lock */,
 				22BFD56F2BF3DE620064E051 /* Sources */,
 				22BFD5702BF3DE620064E051 /* Frameworks */,
 				22BFD5712BF3DE620064E051 /* Resources */,
+				4901F6FB9D2C0B3DAF8F218E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -366,6 +424,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22FDD8C32C068E8C00F01B0B /* Podfile in Resources */,
 				22BFD5602BF3DE620064E051 /* Assets.xcassets in Resources */,
 				220CFC292BFBF32F002F3415 /* Localizable.strings in Resources */,
 				22BFD5632BF3DE620064E051 /* Base in Resources */,
@@ -389,6 +448,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2FE5F474B51F5F1C25730FBA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-grAPPleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4901F6FB9D2C0B3DAF8F218E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-grAPPle-grAPPleUITests/Pods-grAPPle-grAPPleUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-grAPPle-grAPPleUITests/Pods-grAPPle-grAPPleUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-grAPPle-grAPPleUITests/Pods-grAPPle-grAPPleUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D4C2C930A86D4BE4B49C564 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-grAPPle-grAPPleUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E4786C60E990A6C01DF1F64 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-grAPPle-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1808A54B21412D0E2D74D50 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-grAPPle/Pods-grAPPle-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-grAPPle/Pods-grAPPle-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-grAPPle/Pods-grAPPle-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		22BFD54C2BF3DE610064E051 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -403,13 +565,16 @@
 				221D72FD2BF8E35600D7DCEC /* Observable.swift in Sources */,
 				22BFD55E2BF3DE610064E051 /* grAPPle.xcdatamodeld in Sources */,
 				22FD50482BF97F310075D4A8 /* UserProfileMockData.swift in Sources */,
+				22FDD8BD2C06523E00F01B0B /* Cells.swift in Sources */,
 				221D73002BF8E70E00D7DCEC /* UserProfileViewModel.swift in Sources */,
+				22FDD8BF2C0656E800F01B0B /* SettingsTableViewCell.swift in Sources */,
 				22BFD58B2BF3EF720064E051 /* UIImageViewExtensions.swift in Sources */,
 				22BFD5562BF3DE610064E051 /* SceneDelegate.swift in Sources */,
 				220CFC262BFBF1BA002F3415 /* String.swift in Sources */,
 				22C9E33D2BF692FC0001324F /* UserProfileStatsTableViewCell.swift in Sources */,
 				22BFD58E2BF3F78E0064E051 /* UserProfileInfoView.swift in Sources */,
 				22F5729D2BF80636007E61AA /* UserProfileFavoriteTechniqueView.swift in Sources */,
+				22FDD8BB2C064ED800F01B0B /* Setting.swift in Sources */,
 				22BFD5902BF3FE0A0064E051 /* UIViewExtensions.swift in Sources */,
 				22CD3DF12C016E0800FB72B2 /* SettingsViewController.swift in Sources */,
 			);
@@ -601,6 +766,7 @@
 		};
 		22BFD57E2BF3DE620064E051 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 206B9D6BB135DD92FD328B82 /* Pods-grAPPle.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -632,6 +798,7 @@
 		};
 		22BFD57F2BF3DE620064E051 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE3EAAEA3BCFCC8C4300E7E7 /* Pods-grAPPle.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -663,6 +830,7 @@
 		};
 		22BFD5812BF3DE620064E051 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C18D0D0A84E0D602AD738BF /* Pods-grAPPleTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -683,6 +851,7 @@
 		};
 		22BFD5822BF3DE620064E051 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BBD75ECE8E0E90CC30F8FBE /* Pods-grAPPleTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -703,6 +872,7 @@
 		};
 		22BFD5842BF3DE620064E051 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C60F21528F8917B5B52BB78 /* Pods-grAPPle-grAPPleUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -721,6 +891,7 @@
 		};
 		22BFD5852BF3DE620064E051 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A409B7BB85E43AF3900013D /* Pods-grAPPle-grAPPleUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
