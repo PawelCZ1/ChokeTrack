@@ -102,8 +102,8 @@ class UserProfileViewController: UIViewController {
         
         NSLayoutConstraint.activate([
             userProfileLabel.topAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.topAnchor, constant: 32),
-            userProfileLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 32),
-            userProfileLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -32),
+            userProfileLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: Theme.Constants.standardLeadingMargin),
+            userProfileLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: Theme.Constants.standardTrailingMargin),
         ])
     }
 
@@ -122,8 +122,8 @@ class UserProfileViewController: UIViewController {
         
         NSLayoutConstraint.activate([
             userProfileInfoView.topAnchor.constraint(equalTo: userProfileLabel.bottomAnchor, constant: 32),
-            userProfileInfoView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 32),
-            userProfileInfoView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -32),
+            userProfileInfoView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: Theme.Constants.standardLeadingMargin),
+            userProfileInfoView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: Theme.Constants.standardTrailingMargin),
             userProfileInfoView.heightAnchor.constraint(equalToConstant: 200)
         ])
     }
@@ -143,8 +143,8 @@ class UserProfileViewController: UIViewController {
         
         NSLayoutConstraint.activate([
             userProfileCurrentBeltView.topAnchor.constraint(equalTo: userProfileInfoView.bottomAnchor, constant: 40),
-            userProfileCurrentBeltView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 32),
-            userProfileCurrentBeltView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -32),
+            userProfileCurrentBeltView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: Theme.Constants.standardLeadingMargin),
+            userProfileCurrentBeltView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: Theme.Constants.standardTrailingMargin),
             userProfileCurrentBeltView.heightAnchor.constraint(equalToConstant: 200)
         ])
     }
@@ -199,8 +199,8 @@ class UserProfileViewController: UIViewController {
         
         NSLayoutConstraint.activate([
             userProfileStatsTableView.topAnchor.constraint(equalTo: userProfileCurrentBeltView.bottomAnchor, constant: 40),
-            userProfileStatsTableView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 32),
-            userProfileStatsTableView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -32)
+            userProfileStatsTableView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: Theme.Constants.standardLeadingMargin),
+            userProfileStatsTableView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: Theme.Constants.standardTrailingMargin)
             ,
             userProfileStatsTableView.heightAnchor.constraint(equalToConstant: 25 * CGFloat(vm.stats.value?.count ?? 0))
         ])
@@ -221,8 +221,8 @@ class UserProfileViewController: UIViewController {
         
         NSLayoutConstraint.activate([
             userProfileFavoriteTechniqueView.topAnchor.constraint(equalTo: userProfileStatsTableView.bottomAnchor, constant: 40),
-            userProfileFavoriteTechniqueView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 32),
-            userProfileFavoriteTechniqueView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -32),
+            userProfileFavoriteTechniqueView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: Theme.Constants.standardLeadingMargin),
+            userProfileFavoriteTechniqueView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: Theme.Constants.standardTrailingMargin),
             userProfileFavoriteTechniqueView.heightAnchor.constraint(equalToConstant: 200)
         ])
     }

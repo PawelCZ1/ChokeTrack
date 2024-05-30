@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import EzPopup
 
 class SettingsViewController: UIViewController {
     
@@ -100,7 +101,8 @@ extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if settings[indexPath.row].name == "Language" {
-            
+            let popupVC = PopupViewController(contentController: SelectLanguageViewController(), popupWidth: 300, popupHeight: 300)
+            present(popupVC, animated: true)
         }
     }
     

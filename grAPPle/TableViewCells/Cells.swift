@@ -8,4 +8,5 @@
 struct Cells {
     static let statCell = "StatCell"
     static let settingCell = "SettingCell"
+    static let languageCell = "LanguageCell"
 }
